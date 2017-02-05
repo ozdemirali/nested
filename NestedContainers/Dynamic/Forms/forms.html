@@ -1,0 +1,40 @@
+﻿<h4>Formlar</h4>
+<div class="row">
+    <div class="proporty toolbox box-padding">
+
+        <table>
+            <tr>
+                <th><label>Adı</label></th>
+                <td><input type="text" ng-model="models.dropzones.Form.name" /></td>
+            </tr>
+            <tr>
+                <th><label>Entity</label></th>
+                <td>
+                    <!--Formun Kullanıdığı Tobloyu aldığı yer-->
+                    <div class="multi" ng-include="'/Dynamic/Forms/entity.html'"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:right">
+
+
+
+                    <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="color:white;">
+                        <i class="fa fa-plus-circle" aria-hidden="true" style="padding:0"></i>
+                    </a>
+
+                    <!--Toggle menudeki kullanılan alanların dolduğu kısım-->
+                    <div class="collapse" id="collapseExample" style="background-color:#252526" ng-include="'/Dynamic/Forms/toggle.html'">
+
+                    </div>
+
+
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+
+
+</div>

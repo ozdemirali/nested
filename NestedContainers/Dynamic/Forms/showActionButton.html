@@ -1,0 +1,14 @@
+﻿<input type="text" ng-show="models.dropzones.Form.showActionButton" value="{{models.dropzones.Form.showActionButton}}" />
+<input type="text" placeholder="Seçiminiz.." ng-hide="models.dropzones.Form.showActionButton" />
+
+<ul>
+    <li ng-repeat="item in models.tempShowActionButton">
+
+        <input type="radio"
+               ng-model="models.dropzones.Form.showActionButton"
+               ng-value="item"
+               id="{{item}}">
+        {{item}}
+
+    </li>
+</ul>

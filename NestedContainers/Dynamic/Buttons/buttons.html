@@ -1,0 +1,22 @@
+﻿<table>
+    <tr>
+        <th><label>Buttons</label></th>
+        <td>
+            <div class="multi">
+
+                <input type="text" ng-show="models.dropzones.Buttons[0]" value="{{models.dropzones.Buttons}}" />
+                <input type="text" placeholder="Seçiminiz.." ng-hide="models.dropzones.Buttons[0]" />
+
+                <ul>
+                    <li ng-repeat="item in models.buttons">
+                        <input type="checkbox" ng-checked="models.dropzones.Buttons.indexOf(item) > -1" ng-click="buttonsSelection(item)" value="{{item}}" />{{item}}
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </td>
+
+    </tr>
+</table>
