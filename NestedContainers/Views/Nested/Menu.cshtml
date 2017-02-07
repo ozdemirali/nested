@@ -1,12 +1,13 @@
 ﻿
 @{
-    ViewBag.Title = "Finaly";
+    ViewBag.Title = "Menu";
 }
+
 <link href="~/Dynamic/Css/finaly.css" rel="stylesheet" />
 <link href="~/Dynamic/Css/framework.css" rel="stylesheet" />
 <script src="~/Dynamic/Js/angular-drag-and-drop-lists.js"></script>
-<script src="~/Dynamic/Js/finaly.js"></script>
-<div ng-app="finaly" ng-controller="finalyCtrl" class="finaly">
+<script src="~/Dynamic/Js/menu.js"></script>
+<div ng-app="menu" ng-controller="menuCtrl" class="finaly">
     <div class="row">
         <!--*********************Tools*************************-->
         <div class="col-sm-3">
@@ -38,4 +39,3 @@
     <!--Genereted Model-->
     <div class="row" ng-include="'/Dynamic/JsonModel/jsonModel.html'"></div>
 </div>
-

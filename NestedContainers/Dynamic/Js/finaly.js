@@ -1,8 +1,8 @@
 /**
  * The controller doesn't do much more than setting the initial data model
  */
-var app = angular.module("demo2", ["dndLists"]);
-app.controller("NestedListsDemoController", function ($scope) {
+var app = angular.module("finaly", ["dndLists"]);
+app.controller("finalyCtrl", function ($scope) {
 
     $scope.deneme = "Deneme çalýþýyor...";
 
@@ -15,7 +15,6 @@ app.controller("NestedListsDemoController", function ($scope) {
         tempEntity: ["Stok", "Personel", "Yonetici"],
         tempShowActionButton: ["true", "false"],
         tempActionButtonLink: ["Form1", "From2", "From3"],
-        tempIcon: ["fa fa-sign-in", "fa fa-check-square-o", "fa fa-calendar", "fa fa-font", "fa fa-id-badge", "fa fa-picture-o", "fa fa-dot-circle-o", "fa fa-window-maximize", "fa fa-align-justify", "fa fa-calendar"],
 
         templates: [
             
@@ -35,7 +34,7 @@ app.controller("NestedListsDemoController", function ($scope) {
         dropzones: {
             "Form":{},
             "Buttons":[],
-            "Widget":{"Item": [
+            "Widget":{"Widgets": [
                
                 {
                     "type": "text",

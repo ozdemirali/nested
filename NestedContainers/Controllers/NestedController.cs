@@ -27,5 +27,13 @@ namespace NestedContainers.Controllers
         {
             return View();
         }
+        public ActionResult Menu()
+        {
+            return View();
+        }
+        public ActionResult List()
+        {
+            return View();
+        }
 	}
 }

@@ -106,8 +106,11 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Dynamic\Buttons\general.html" />
+    <Content Include="Dynamic\Js\menu.js" />
+    <Content Include="Dynamic\Js\list.js" />
     <Content Include="Dynamic\Proporties\proporties.html" />
     <Content Include="Dynamic\Tools\general.html" />
+    <Content Include="Dynamic\Tools\timePicker.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Dynamic\Forms\actionButtonLink.html" />
@@ -152,7 +155,7 @@
     <Content Include="Nested\bootstrap.min.css" />
     <Content Include="Dynamic\Css\framework.css" />
     <Content Include="Nested\demo-framework.js" />
-    <Content Include="Dynamic\Js\nestedMobile.js" />
+    <Content Include="Dynamic\Js\finaly.js" />
     <Content Include="Nested\nested-frame.html" />
     <Content Include="Nested\nested.css" />
     <Content Include="Nested\nested.html" />
@@ -218,6 +221,8 @@
     <Content Include="Views\Nested\Nested.cshtml" />
     <Content Include="Views\Nested\Finaly.cshtml" />
     <Content Include="Views\Nested\Select.cshtml" />
+    <Content Include="Views\Nested\Menu.cshtml" />
+    <Content Include="Views\Nested\List.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
