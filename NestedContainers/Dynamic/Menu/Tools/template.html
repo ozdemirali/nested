@@ -1,0 +1,11 @@
+﻿<h4 style="margin-left:15px">Araçlar</h4>
+<ul>
+    <li ng-repeat="item in models.templates"
+        dnd-draggable="item"
+        dnd-effect-allowed="copy"
+        dnd-copied="item.id = item.id + 1">
+        <a href="#">
+            <i class={{item.icon}} aria-hidden="true"></i>{{item.name}}
+        </a>
+    </li>
+</ul>

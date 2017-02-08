@@ -108,6 +108,11 @@
     <Content Include="Dynamic\Buttons\general.html" />
     <Content Include="Dynamic\Js\menu.js" />
     <Content Include="Dynamic\Js\list.js" />
+    <Content Include="Dynamic\Menu\Tools\general.html" />
+    <Content Include="Dynamic\Menu\Tools\item.html" />
+    <Content Include="Dynamic\Menu\Tools\list.html" />
+    <Content Include="Dynamic\Menu\Tools\menu.html" />
+    <Content Include="Dynamic\Menu\Tools\template.html" />
     <Content Include="Dynamic\Proporties\proporties.html" />
     <Content Include="Dynamic\Tools\general.html" />
     <Content Include="Dynamic\Tools\timePicker.html" />
