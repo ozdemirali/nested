@@ -108,13 +108,12 @@
     <Content Include="Dynamic\Buttons\general.html" />
     <Content Include="Dynamic\Js\menu.js" />
     <Content Include="Dynamic\Js\list.js" />
-    <Content Include="Dynamic\Menu\Tools\general.html" />
-    <Content Include="Dynamic\Menu\Tools\item.html" />
-    <Content Include="Dynamic\Menu\Tools\list.html" />
-    <Content Include="Dynamic\Menu\Tools\menu.html" />
-    <Content Include="Dynamic\Menu\Tools\template.html" />
+    <Content Include="Dynamic\Tools\menugeneral.html" />
+    <Content Include="Dynamic\Proporties\item.html" />
+    <Content Include="Dynamic\Proporties\menu.html" />
     <Content Include="Dynamic\Proporties\proporties.html" />
     <Content Include="Dynamic\Tools\general.html" />
+    <Content Include="Dynamic\Tools\menu.html" />
     <Content Include="Dynamic\Tools\timePicker.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -237,7 +236,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Dynamic\Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
