@@ -233,8 +233,19 @@
     <Content Include="Views\Nested\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Api\MyApiController.cs" />
-    <Compile Include="Api\UserCheck.cs" />
+    <Compile Include="Api\FormApiController.cs" />
+    <Compile Include="Api\FormModel\FormModel.cs" />
+    <Compile Include="Api\ListApiController.cs" />
+    <Compile Include="Api\UserApiController.cs" />
+    <Compile Include="Api\MenuController.cs" />
+    <Compile Include="Api\MenuModel\MenuItemModel.cs" />
+    <Compile Include="Api\MenuModel\MenuGroupModel.cs" />
+    <Compile Include="Api\MenuModel\MenuModel.cs" />
+    <Compile Include="Api\MenuModel\MenuUserCheck.cs" />
+    <Compile Include="Api\GeneralApiController.cs" />
+    <Compile Include="Api\ListModel\SqlListModel.cs" />
+    <Compile Include="Api\FormModel\SqlModel.cs" />
+    <Compile Include="Api\FormModel\UserCheck.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\NestedController.cs" />
