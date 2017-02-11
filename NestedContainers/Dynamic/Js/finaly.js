@@ -2,11 +2,15 @@
  * The controller doesn't do much more than setting the initial data model
  */
 var app = angular.module("finaly", ["dndLists"]);
-app.controller("finalyCtrl", function ($scope) {
+app.controller("finalyCtrl", ["$scope", "$http", function ($scope, $http) {
 
     $scope.deneme = "Deneme çalýþýyor...";
-
-    //$scope.buttons=["CALL","SMS","TTT"]
+    $scope.FormType=[];
+    $http.post("/api/myData/Forms").then(function (data) {
+        $scope.FormType = data.data;
+        console.log($scope.FormType);
+    });
+    $scope.buttons=["CALL","SMS","TTT"]
 
     $scope.models = {
         selected: null,
@@ -92,4 +96,4 @@ app.controller("finalyCtrl", function ($scope) {
 
 
 
-});
+}]);
