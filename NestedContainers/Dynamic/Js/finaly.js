@@ -4,13 +4,13 @@
 var app = angular.module("finaly", ["dndLists"]);
 app.controller("finalyCtrl", ["$scope", "$http", function ($scope, $http) {
 
-    $scope.deneme = "Deneme çalýþýyor...";
-    $scope.FormType=[];
-    $http.post("/api/myData/Forms").then(function (data) {
-        $scope.FormType = data.data;
-        console.log($scope.FormType);
-    });
+    $scope.formType=["List","Form","Rapor","Teklif"];
+    //$http.post("/api/myData/FormType").then(function (data) {
+    //    $scope.formType = data.data;
+    //    //console.log($scope.FormType);
+    //});
     $scope.buttons=["CALL","SMS","TTT"]
+    $scope.parentField=["Customer","Price","Total"]
 
     $scope.models = {
         selected: null,
@@ -22,16 +22,16 @@ app.controller("finalyCtrl", ["$scope", "$http", function ($scope, $http) {
 
         templates: [
             
-            { type: "button", id: 1, name: "Button", icon: "fa fa-sign-in",buttons:[] },
-            { type: "checkbox", id: 2, name: "Checkbox", icon: "fa fa-check-square-o", buttons: [] },
-            { type: "dateTimePicker", id: 3, name: "DateTimePicker", icon: "fa fa-calendar", buttons: [] },
-            { type: "label", id: 4, name: "Label", icon: "fa fa-font", buttons: [] },
-            { type: "parentId", id: 5, name: "ParentId", icon: "fa fa-id-badge", buttons: [] },
-            { type: "pictureBox", id: 6, name: "PictureBox", icon: "fa fa-picture-o", buttons: [] },
-            { type: "radio", id: 7, name: "RadioButton", icon: "fa fa-dot-circle-o", buttons: [] },
-            { type: "subForm", id: 8, name: "SubFrom", icon: "fa fa-window-maximize", buttons: [] },
-            { type: "text", id: 9, name: "TextBox", icon: "fa fa-align-justify", buttons: [] },
-            { type: "timePicker", id: 10, name: "TimePicker", icon: "fa fa-calendar", buttons: [] },
+            { type: "button", id: 1, field: "", label: "Button", icon: "fa fa-sign-in", buttons: [] },
+            { type: "checkbox", id: 2, field: "", label: "Checkbox", icon: "fa fa-check-square-o", buttons: [] },
+            { type: "dateTimePicker", id: 3, field: "", label: "DateTimePicker", icon: "fa fa-calendar", buttons: [] },
+            { type: "label", id: 4, field: "", label: "Label", icon: "fa fa-font", buttons: [] },
+            { type: "parentId", id: 5, field: "", label: "ParentId", icon: "fa fa-id-badge", buttons: [] },
+            { type: "pictureBox", id: 6, field: "", label: "PictureBox", icon: "fa fa-picture-o", buttons: [] },
+            { type: "radio", id: 7,  field: "", label: "RadioButton", icon: "fa fa-dot-circle-o", buttons: [] },
+            { type: "subForm", id: 8,  field: "", label: "SubFrom", icon: "fa fa-window-maximize", buttons: [] },
+            { type: "textBox", id: 9, field: "", label: "TextBox", icon: "fa fa-align-justify", buttons: [] },
+            { type: "timePicker", id: 10,  field: "", label: "TimePicker", icon: "fa fa-calendar", buttons: [] },
 
         ],
 
@@ -41,11 +41,6 @@ app.controller("finalyCtrl", ["$scope", "$http", function ($scope, $http) {
             "Widget":{"Widgets": [
                
                 {
-                    "type": "text",
-                    "id": "9",
-                    "name": "TextBox",
-                    "buttons":[]
-                   
 
                 }
 

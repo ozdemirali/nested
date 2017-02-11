@@ -13,7 +13,9 @@
             </tr>
             <tr>
                 <th><label>Tipi</label></th>
-                <td><input type="text" ng-model="models.dropzones.Form.formType" /></td>
+                <td>
+                    <div class="multi" ng-include="'/Dynamic/Forms/formtype.html'"></div>
+                </td>
             </tr>
             <tr>
                 <th><label>Entity</label></th>

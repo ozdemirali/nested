@@ -123,6 +123,9 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Dynamic\Buttons\general.html" />
+    <Content Include="Dynamic\Forms\parentField.html" />
+    <Content Include="Dynamic\Forms\actionButtonFormType.html" />
+    <Content Include="Dynamic\Forms\formType.html" />
     <Content Include="Dynamic\Js\menu.js" />
     <Content Include="Dynamic\Js\list.js" />
     <Content Include="Dynamic\Tools\menugeneral.html" />
@@ -132,6 +135,7 @@
     <Content Include="Dynamic\Tools\general.html" />
     <Content Include="Dynamic\Tools\menu.html" />
     <Content Include="Dynamic\Tools\timePicker.html" />
+    <Content Include="Dynamic\User\general.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Dynamic\Forms\actionButtonLink.html" />
@@ -158,7 +162,7 @@
     <Content Include="Dynamic\Proporties\subForm.html" />
     <Content Include="Dynamic\Proporties\label.html" />
     <Content Include="Dynamic\Proporties\timePicker.html" />
-    <Content Include="Dynamic\Proporties\text.html" />
+    <Content Include="Dynamic\Proporties\textBox.html" />
     <Content Include="Dynamic\Recycle\recycle.html" />
     <Content Include="Scripts\bootstrap-3.3.2.min.js" />
     <Content Include="Scripts\bootstrap-multiselect.js" />
@@ -219,7 +223,7 @@
     <Content Include="Dynamic\Tools\parentId.html" />
     <Content Include="Dynamic\Tools\subform.html" />
     <Content Include="Dynamic\Tools\template.html" />
-    <Content Include="Dynamic\Tools\text.html" />
+    <Content Include="Dynamic\Tools\textBox.html" />
     <Content Include="Dynamic\Tools\item.html" />
     <Content Include="Dynamic\Tools\list.html" />
     <Content Include="Views\Nested\denek.html" />
