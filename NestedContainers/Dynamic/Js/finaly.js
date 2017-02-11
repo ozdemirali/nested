@@ -4,17 +4,20 @@
 var app = angular.module("finaly", ["dndLists"]);
 app.controller("finalyCtrl", ["$scope", "$http", function ($scope, $http) {
 
-    $scope.formType=["List","Form","Rapor","Teklif"];
+    $scope.formType=["LIST","FORM","REPORT","OPPORTUNITY"];
     //$http.post("/api/myData/FormType").then(function (data) {
     //    $scope.formType = data.data;
     //    //console.log($scope.FormType);
     //});
-    $scope.buttons=["CALL","SMS","TTT"]
+
+    //Sayfa butonlarý  SAVE ATTACH PDF CANCEL CLOSE
+    $scope.buttons = ["CALL", "SMS", "TTT"]
     $scope.parentField=["Customer","Price","Total"]
 
     $scope.models = {
         selected: null,
-        buttons:["Save","Cancel","Attach"],
+        buttons: ["Save", "Cancel", "Attach"],
+        //CALL NFC MESSAGE BARCODE SEND_MAIL LOCATION MAP
         tempWidgetButtons: ["CALL", "SMS", "TTT"],
         tempEntity: ["Stok", "Personel", "Yonetici"],
         tempShowActionButton: ["true", "false"],
@@ -22,16 +25,14 @@ app.controller("finalyCtrl", ["$scope", "$http", function ($scope, $http) {
 
         templates: [
             
-            { type: "button", id: 1, field: "", label: "Button", icon: "fa fa-sign-in", buttons: [] },
-            { type: "checkbox", id: 2, field: "", label: "Checkbox", icon: "fa fa-check-square-o", buttons: [] },
-            { type: "dateTimePicker", id: 3, field: "", label: "DateTimePicker", icon: "fa fa-calendar", buttons: [] },
-            { type: "label", id: 4, field: "", label: "Label", icon: "fa fa-font", buttons: [] },
-            { type: "parentId", id: 5, field: "", label: "ParentId", icon: "fa fa-id-badge", buttons: [] },
-            { type: "pictureBox", id: 6, field: "", label: "PictureBox", icon: "fa fa-picture-o", buttons: [] },
-            { type: "radio", id: 7,  field: "", label: "RadioButton", icon: "fa fa-dot-circle-o", buttons: [] },
-            { type: "subForm", id: 8,  field: "", label: "SubFrom", icon: "fa fa-window-maximize", buttons: [] },
-            { type: "textBox", id: 9, field: "", label: "TextBox", icon: "fa fa-align-justify", buttons: [] },
-            { type: "timePicker", id: 10,  field: "", label: "TimePicker", icon: "fa fa-calendar", buttons: [] },
+            { type: "button", widgetType:"BUTTON", id: 1, field: "",  label: "Button", icon: "fa fa-sign-in", buttons: [] },
+            { type: "checkbox",widgetType:"CHECKBOX", id: 2, field: "", label: "Checkbox", icon: "fa fa-check-square-o", buttons: [] },
+            { type: "dateTimePicker",widgetType:"DATEPICKER", id: 3, field: "", label: "DateTimePicker", icon: "fa fa-calendar", buttons: [] },
+            { type: "label", id: 4,widgetType:"TEXTVIEW", field: "", label: "Label", icon: "fa fa-font", buttons: [] },
+            { type: "subForm",widgetType:"SUBFORM", id: 8,  field: "", label: "SubFrom", icon: "fa fa-window-maximize", buttons: [] },
+            { type: "textBox",widgetType:"EDITVIEW", id: 9, field: "", label: "TextBox", icon: "fa fa-align-justify", buttons: [] },
+            { type: "timePicker",widgetType:"TIMEPICKER", id: 10,  field: "", label: "TimePicker", icon: "fa fa-calendar", buttons: [] },
+            { type: "dropdown",widgetType:"DROPDOWN", id: 10,  field: "", label: "TimePicker", icon: "fa fa-calendar", buttons: [] },
 
         ],
 
