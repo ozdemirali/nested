@@ -14,6 +14,7 @@ app.controller("finalyCtrl", ["$scope", "$http", function ($scope, $http) {
     $scope.buttons = ["CALL", "SMS", "TTT"]
     $scope.parentField=["Customer","Price","Total"]
 
+    $scope.trueFalse=[true,false]
     $scope.models = {
         selected: null,
         buttons: ["Save", "Cancel", "Attach"],
@@ -25,14 +26,14 @@ app.controller("finalyCtrl", ["$scope", "$http", function ($scope, $http) {
 
         templates: [
             
-            { type: "button", widgetType:"BUTTON", id: 1, field: "",  label: "Button", icon: "fa fa-sign-in", buttons: [] },
-            { type: "checkbox",widgetType:"CHECKBOX", id: 2, field: "", label: "Checkbox", icon: "fa fa-check-square-o", buttons: [] },
-            { type: "dateTimePicker",widgetType:"DATEPICKER", id: 3, field: "", label: "DateTimePicker", icon: "fa fa-calendar", buttons: [] },
-            { type: "label", id: 4,widgetType:"TEXTVIEW", field: "", label: "Label", icon: "fa fa-font", buttons: [] },
-            { type: "subForm",widgetType:"SUBFORM", id: 8,  field: "", label: "SubFrom", icon: "fa fa-window-maximize", buttons: [] },
-            { type: "textBox",widgetType:"EDITVIEW", id: 9, field: "", label: "TextBox", icon: "fa fa-align-justify", buttons: [] },
-            { type: "timePicker",widgetType:"TIMEPICKER", id: 10,  field: "", label: "TimePicker", icon: "fa fa-calendar", buttons: [] },
-            { type: "dropdown",widgetType:"DROPDOWN", id: 10,  field: "", label: "TimePicker", icon: "fa fa-calendar", buttons: [] },
+            { widgetType:"BUTTON", id: 1, field: "",  label: "Button", required:true, enable:true,mask:true,defaultValue:"Text",icon: "fa fa-sign-in", buttons: [] },
+            { widgetType: "CHECKBOX", id: 2, field: "", label: "Checkbox", required: true, enable: true, mask: true, defaultValue: "Text", icon: "fa fa-check-square-o", buttons: [] },
+            { widgetType: "DATEPICKER", id: 3, field: "", label: "DatePicker", required: true, enable: true, mask: true, defaultValue: "Text", icon: "fa fa-calendar", buttons: [] },
+            { widgetType: "DROPDOWN", id: 4, field: "", label: "DropDown", required: true, enable: true, mask: true, defaultValue: "Text", icon: "fa fa-caret-square-o-down", buttons: [] },
+            { widgetType: "TEXTVIEW", id: 5, field: "", label: "Label", required: true, enable: true, mask: true, defaultValue: "Text", icon: "fa fa-font", buttons: [] },
+            { widgetType: "SUBFORM", id: 6, field: "", label: "SubFrom", required: true, enable: true, mask: true, defaultValue: "Text", icon: "fa fa-window-maximize", buttons: [] },
+            { widgetType: "EDITVIEW", id: 7, field: "", label: "TextBox", required: true, enable: true, mask: true, defaultValue: "Text", icon: "fa fa-align-justify", buttons: [] },
+            { widgetType: "TIMEPICKER", id: 8, field: "", label: "TimePicker", required: true, enable: true, mask: true, defaultValue: "Text", icon: "fa fa-calendar", buttons: [] },
 
         ],
 
