@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -35,15 +36,15 @@ namespace NestedContainers.Api
         /// <returns></returns>
         [Route("Fields")]
         [HttpPost]
-        public List<string> getEntitiesFields(string EntityName)
+        public List<string> getEntitiesFields(JObject data)
         {
             //EntityName=Company
-            var data = new List<String>();
-            data.Add("Id");
-            data.Add("Name");
-            data.Add("Mail");
+            var ddata = new List<String>();
+            ddata.Add("Id");
+            ddata.Add("Name");
+            ddata.Add("Mail");
             //....diğerleri
-            return data;
+            return ddata;
 
         }
                    
