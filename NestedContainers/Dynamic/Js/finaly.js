@@ -15,23 +15,24 @@ app.controller("finalyCtrl", ["$scope", "$http", function ($scope, $http) {
         $scope.fields = data.data
     });
 
+    $http.post("../Api/mobil/generalData/Entity").then(function (data) {
+        $scope.entity = data.data
+    });
 
-    //Sayfa butonlarý  SAVE ATTACH PDF CANCEL CLOSE
-    $scope.buttons = ["CALL", "SMS", "TTT"]
+    $http.post("../Api/mobil/formData/Forms").then(function (data) {
+        $scope.forms = data.data
+    });
+  
+
+    $scope.buttons = ["SAVE", "ATTACH", "PDF","CANCEL","CLOSE"]
     $scope.parentField=["Customer","Price","Total"]
-
     $scope.trueFalse=[true,false]
+
     $scope.models = {
         selected: null,
-        buttons: ["Save", "Cancel", "Attach"],
-        //CALL NFC MESSAGE BARCODE SEND_MAIL LOCATION MAP
-        tempWidgetButtons: ["CALL", "SMS", "TTT"],
-        tempEntity: ["Stok", "Personel", "Yonetici"],
-        tempShowActionButton: ["true", "false"],
-        tempActionButtonLink: ["Form1", "From2", "From3"],
+        tempWidgetButtons: ["CALL", "NFC", "MESSAGE", "BARCODE", "SEND_MAIL", "LOCATION", "MAP"],
 
         templates: [
-            
             { widgetType:"BUTTON", id: 1, field: "",  label: "Button", required:false, enable:false,mask:false,defaultValue:"Text",icon: "fa fa-sign-in", buttons: [] },
             { widgetType: "CHECKBOX", id: 2, field: "", label: "Checkbox", required: false, enable: false, mask: false, defaultValue: "Text", icon: "fa fa-check-square-o", buttons: [] },
             { widgetType: "DATEPICKER", id: 3, field: "", label: "DatePicker", required: false, enable: false, mask: false, defaultValue: "Text", icon: "fa fa-calendar", buttons: [] },
@@ -40,7 +41,6 @@ app.controller("finalyCtrl", ["$scope", "$http", function ($scope, $http) {
             { widgetType: "SUBFORM", id: 6, field: "", label: "SubFrom", required: false, enable: false, mask: false, defaultValue: "Text", icon: "fa fa-window-maximize", buttons: [] },
             { widgetType: "EDITVIEW", id: 7, field: "", label: "TextBox", required: false, enable: false, mask: false, defaultValue: "Text", icon: "fa fa-align-justify", buttons: [] },
             { widgetType: "TIMEPICKER", id: 8, field: "", label: "TimePicker", required: false, enable: false, mask: false, defaultValue: "Text", icon: "fa fa-calendar", buttons: [] },
-
         ],
 
         dropzones: {

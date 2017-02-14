@@ -13,8 +13,8 @@ app.controller("menuCtrl", function ($scope) {
       
         templates: [
 
-            { type: "menu", id: 2, name: "Menu", icon: "fa fa-bars", data: [[]] },
-            { type: "item", id: 1, link: "", name: "MenuItem", icon: "fa fa-minus" },
+            { widgetType: "menu", id: 2, label: "Menu", icon: "fa fa-bars", data: [[]] },
+            { widgetType: "item", id: 1, label: "MenuItem", name: "MenuItem", icon: "fa fa-minus" },
 
 
         ],
