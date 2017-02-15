@@ -14,7 +14,7 @@ app.controller("menuCtrl", function ($scope) {
         templates: [
 
             { widgetType: "menu", id: 2, label: "Menu", icon: "fa fa-bars", data: [[]] },
-            { widgetType: "item", id: 1, label: "MenuItem", name: "MenuItem", icon: "fa fa-minus" },
+            { widgetType: "item", id: 1, label: "MenuItem", icon: "fa fa-minus" },
 
 
         ],
@@ -34,6 +34,13 @@ app.controller("menuCtrl", function ($scope) {
 
     /**********************************************************************/
     $scope.$watch('models.dropzones', function (model) {
+        for (var i = 0; i < $scope.models.dropzones.group.length; i++) {
+             
+            if ($scope.models.dropzones.group[i].widgetType == "item") {
+                console.log($scope.models.dropzones.group[i].widgetType);
+                $scope.models.dropzones.group.splice(i,1);
+            }
+        }
         $scope.modelAsJson = angular.toJson(model, true);
     }, true);
 
