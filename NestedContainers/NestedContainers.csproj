@@ -141,6 +141,8 @@
     <Content Include="Dynamic\Proporties\enable.html" />
     <Content Include="Dynamic\Proporties\field.html" />
     <Content Include="Dynamic\Proporties\general.html" />
+    <Content Include="Dynamic\Proporties\List\general.html" />
+    <Content Include="Dynamic\Proporties\List\proporties.html" />
     <Content Include="Dynamic\Proporties\mask.html" />
     <Content Include="Dynamic\Proporties\required.html" />
     <Content Include="Dynamic\Tools\dropDown.html" />
@@ -279,7 +281,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Dynamic\Models\" />
-    <Folder Include="Dynamic\Proporties\List\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

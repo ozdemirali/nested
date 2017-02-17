@@ -30,15 +30,21 @@ app.controller("menuCtrl", function ($scope) {
         }
     };
 
-    
-
     /**********************************************************************/
     $scope.$watch('models.dropzones', function (model) {
         for (var i = 0; i < $scope.models.dropzones.group.length; i++) {
-             
-            if ($scope.models.dropzones.group[i].widgetType == "item") {
-                console.log($scope.models.dropzones.group[i].widgetType);
+            if ($scope.models.dropzones.group[i].widgetType == "menuItem") {
                 $scope.models.dropzones.group.splice(i,1);
+            }
+            if ($scope.models.dropzones.group[i].widgetType == "menu") {
+                for (var j = 0; j < $scope.models.dropzones.group[i].data.length; j++) {
+                    for (var k = 0; k < $scope.models.dropzones.group[i].data[j].length; k++) {
+                        if ($scope.models.dropzones.group[i].data[j][k].widgetType=="menu") {
+                            $scope.models.dropzones.group[i].data[j].splice(k, 1)
+                        }
+                    }
+
+                }
             }
         }
         $scope.modelAsJson = angular.toJson(model, true);
