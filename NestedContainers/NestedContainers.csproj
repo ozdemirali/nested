@@ -128,6 +128,15 @@
     <Content Include="Dynamic\Forms\formType.html" />
     <Content Include="Dynamic\Js\menu.js" />
     <Content Include="Dynamic\Js\list.js" />
+    <Content Include="Dynamic\List\actionButtonFormType.html" />
+    <Content Include="Dynamic\List\actionButtonLink.html" />
+    <Content Include="Dynamic\List\editFormType.html" />
+    <Content Include="Dynamic\List\entity.html" />
+    <Content Include="Dynamic\List\forms.html" />
+    <Content Include="Dynamic\List\formType.html" />
+    <Content Include="Dynamic\List\parentField.html" />
+    <Content Include="Dynamic\List\showActionButton.html" />
+    <Content Include="Dynamic\List\toggle.html" />
     <Content Include="Dynamic\Proporties\buttons.html" />
     <Content Include="Dynamic\Proporties\enable.html" />
     <Content Include="Dynamic\Proporties\field.html" />
@@ -135,11 +144,13 @@
     <Content Include="Dynamic\Proporties\mask.html" />
     <Content Include="Dynamic\Proporties\required.html" />
     <Content Include="Dynamic\Tools\dropDown.html" />
-    <Content Include="Dynamic\Tools\menugeneral.html" />
+    <Content Include="Dynamic\Tools\listGeneral.html" />
+    <Content Include="Dynamic\Tools\menuGeneral.html" />
     <Content Include="Dynamic\Proporties\proporties.html" />
     <Content Include="Dynamic\Tools\general.html" />
     <Content Include="Dynamic\Tools\menu.html" />
     <Content Include="Dynamic\Tools\datePicker.html" />
+    <Content Include="Dynamic\Tools\listItem.html" />
     <Content Include="Dynamic\Tools\timePicker.html" />
     <Content Include="Dynamic\User\general.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -220,7 +231,7 @@
     <Content Include="Dynamic\Tools\subform.html" />
     <Content Include="Dynamic\Tools\template.html" />
     <Content Include="Dynamic\Tools\editView.html" />
-    <Content Include="Dynamic\Tools\item.html" />
+    <Content Include="Dynamic\Tools\menuItem.html" />
     <Content Include="Dynamic\Tools\list.html" />
     <Content Include="Views\Nested\denek.html" />
     <Content Include="Web.config" />
@@ -268,6 +279,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Dynamic\Models\" />
+    <Folder Include="Dynamic\Proporties\List\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

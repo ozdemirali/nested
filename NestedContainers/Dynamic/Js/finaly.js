@@ -47,7 +47,6 @@ app.controller("finalyCtrl", ["$scope", "$http", function ($scope, $http) {
             "Form":{},
             "Buttons":[],
             "Widget":{"Widgets": [
-               
                 {
 
                 }
