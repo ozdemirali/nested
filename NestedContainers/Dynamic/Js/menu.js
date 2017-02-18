@@ -4,17 +4,17 @@
 var app = angular.module("menu", ["dndLists"]);
 app.controller("menuCtrl", function ($scope) {
 
-    $scope.deneme = "Deneme çalýþýyor...";
 
-    //$scope.buttons=["CALL","SMS","TTT"]
+    $scope.formType = ["LIST", "FORM", "REPORT", "OPPORTUNITY"];
+
 
     $scope.models = {
         selected: null,
       
         templates: [
 
-            { widgetType: "menu", id: 2, label: "Menu", icon: "fa fa-bars", data: [[]] },
-            { widgetType: "menuItem", id: 1, label: "MenuItem", icon: "fa fa-minus" },
+            { widgetType: "menu", id: 2, label: "Menu",name:"Activite", icon: "fa fa-bars", data: [[]] },
+            { widgetType: "menuItem", id: 1, label: "MenuItem",name:"Mesai",type:"",link:"", icon: "fa fa-minus" },
 
 
         ],
