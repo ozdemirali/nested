@@ -1,0 +1,13 @@
+﻿<input type="text" ng-show="models.selected.field" value="{{models.selected.field}}" />
+<input type="text" placeholder="Seçiminiz.." ng-hide="models.selected.field" />
+
+<ul>
+    <li ng-repeat="item in fields">
+
+        <input type="radio"
+               ng-model="models.selected.field"
+               ng-value="item"
+               id="{{item}}">
+        {{item}}
+    </li>
+</ul>

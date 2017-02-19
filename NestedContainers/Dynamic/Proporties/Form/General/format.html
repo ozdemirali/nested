@@ -1,0 +1,13 @@
+﻿<input type="text" ng-show="models.selected.format" value="{{models.selected.format}}" />
+<input type="text" placeholder="Seçiminiz.." ng-hide="models.selected.format" />
+
+<ul>
+    <li ng-repeat="item in format">
+
+        <input type="radio"
+               ng-model="models.selected.format"
+               ng-value="item"
+               id="{{item}}">
+        {{item}}
+    </li>
+</ul>

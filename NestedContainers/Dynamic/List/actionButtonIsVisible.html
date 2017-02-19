@@ -1,0 +1,12 @@
+﻿<input type="text" ng-model="models.dropzones.actionButtonIsVisible" disabled />
+<ul>
+    <li ng-repeat="item in trueFalse">
+
+        <input type="radio"
+               ng-model="models.dropzones.actionButtonIsVisible"
+               ng-value="item"
+               id="{{item}}">
+        {{item}}
+
+    </li>
+</ul>

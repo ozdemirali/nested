@@ -1,11 +1,16 @@
 ﻿<h4>List</h4>
 <div class="row">
     <div class="proporty toolbox box-padding">
-
         <table>
             <tr>
-                <th><label>listPageSize</label></th>
-                <td><input type="text" ng-model="models.dropzones.listPageSize" /></td>
+                <th><label>Adı</label></th>
+                <td><input type="text" ng-model="models.dropzones.formName" /></td>
+            </tr>
+            <tr>
+                <th><label>EditFormType</label></th>
+                <td>
+                    <div class="multi" ng-include="'/Dynamic/List/editFormType.html'"></div>
+                </td>
             </tr>
             <tr>
                 <th><label>EditLink</label></th>
@@ -18,12 +23,31 @@
                 </td>
             </tr>
             <tr>
-                <th><label>Adı</label></th>
-                <td><input type="text" ng-model="models.dropzones.formName" /></td>
+                <th><label>Entity</label></th>
+                <td>
+                    <!--Formun Kullanıdığı Tobloyu aldığı yer-->
+                    <div class="multi" ng-include="'/Dynamic/List/entity.html'"></div>
+                </td>
             </tr>
             <tr>
-                <th><label>Başlık</label></th>
+                <th><label>ListPageSize</label></th>
+                <td><input type="text" ng-model="models.dropzones.listPageSize" /></td>
+            </tr>
+            <tr>
+                <th><label>Title</label></th>
                 <td><input type="text" ng-model="models.dropzones.formTitle" /></td>
+            </tr>
+            <tr>
+                <th><label>SearchField</label></th>
+                <td><input type="text" ng-model="models.dropzones.searchField" /></td>
+            </tr>
+            <tr>
+                <th><label>SortField</label></th>
+                <td><input type="text" ng-model="models.dropzones.sortField" /></td>
+            </tr>
+            <tr>
+                <th><label>Sqlld</label></th>
+                <td><input type="text" ng-model="models.dropzones.sqlId" /></td>
             </tr>
             <tr>
                 <th><label>Tipi</label></th>
@@ -32,27 +56,14 @@
                 </td>
             </tr>
             <tr>
-                <th><label>Entity</label></th>
-                <td>
-                    <!--Formun Kullanıdığı Tobloyu aldığı yer-->
-                    <div class="multi" ng-include="'/Dynamic/List/entity.html'"></div>
-                </td>
-            </tr>
-            <tr>
                 <td colspan="2" style="text-align:right">
-
-
 
                     <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="color:white;">
                         <i class="fa fa-plus-circle" aria-hidden="true" style="padding:0"></i>
                     </a>
-
                     <!--Toggle menudeki kullanılan alanların dolduğu kısım-->
                     <div class="collapse" id="collapseExample" style="background-color:#252526" ng-include="'/Dynamic/List/toggle.html'">
-
                     </div>
-
-
                 </td>
             </tr>
         </table>

@@ -1,9 +1,11 @@
 /**
  * The controller doesn't do much more than setting the initial data model
  */
-var app = angular.module("list", ["dndLists"]);
-app.controller("listCtrl", ["$scope", "$http", function ($scope, $http) {
+var app = angular.module("user", ["dndLists"]);
 
+app.controller("userCtrl", ["$scope", "$http", function ($scope, $http) {
+
+    $scope.menu = ["menu1", "menu2", "menu3"]
     $scope.formType = ["LIST", "FORM", "REPORT", "OPPORTUNITY"];
     //$http.post("/api/myData/FormType").then(function (data) {
     //    $scope.formType = data.data;
@@ -44,42 +46,40 @@ app.controller("listCtrl", ["$scope", "$http", function ($scope, $http) {
         //],
 
         dropzones: {
-            "listPageSize":"",
-            "editLink":"",
-            "editFormType":"",
+            "listPageSize": "",
+            "editLink": "",
+            "editFormType": "",
             "formName": "",
-            "formTitle":"",
+            "formTitle": "",
             "entity": "",
             "formType": "",
             "actionButtonFormType": "",
-            "actionButtonIsVisible": true,//actionButtonIsVisible
+            "showActionIsButton": true,
             "actionButtonLink": "",
             "parentField": "",
-            "searchField": "",
-            "sortField": "",
-            "sqlId":"",
+            "Buttons": [],
             "Widget": {
                 "Widgets": [
                     {
-                      "field": "Description",
-                      "label": "Item",
-                    
+                        "field": "Description",
+                        "label": "Item",
+
                     },
                     {
                         "field": "Description",
                         "label": "Item",
-                       
-                    }, 
-                    {
-                        "field": "Description",
-                        "label": "Item",
-                        
+
                     },
                     {
                         "field": "Description",
                         "label": "Item",
-                    
-}
+
+                    },
+                    {
+                        "field": "Description",
+                        "label": "Item",
+
+                    }
 
                 ]
             },
@@ -130,4 +130,3 @@ app.controller("listCtrl", ["$scope", "$http", function ($scope, $http) {
 
 
 }]);
-

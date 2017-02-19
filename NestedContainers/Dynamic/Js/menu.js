@@ -14,7 +14,7 @@ app.controller("menuCtrl", function ($scope) {
         templates: [
 
             { widgetType: "menu", id: 2, label: "Menu",name:"Activite", icon: "fa fa-bars", data: [[]] },
-            { widgetType: "menuItem", id: 1, label: "MenuItem",name:"Mesai",type:"",link:"", icon: "fa fa-minus" },
+            { widgetType: "menuItem", id: 1, label: "MenuItem", icon: "fa fa-minus" },
 
 
         ],
