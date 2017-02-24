@@ -1,15 +1,32 @@
-﻿<h4>Form</h4>
+﻿<div class="row">
+    <div class="proporty box-padding-user">
+        <table>
+            <tr>
+                <th><h4 style="margin:0">Form</h4></th>
+                <td style="text-align:right">
+                    <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="color:white;">
+                        <i class="fa fa-plus-circle" aria-hidden="true" style="padding:0"></i>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
 <div class="row">
-    <div ng-repeat ="list in models.dropzones.Widget">
-                <ul dnd-list="list" style="list-style-type: none">
-                    <li ng-repeat="item in list"
-                        dnd-draggable="item"
-                        dnd-effect-allowed="move"
-                        dnd-moved="list.splice($index, 1)"
-                        dnd-selected="models.selected = item"
-                        ng-class="{selected: models.selected === item}"
-                        ng-include="'/Dynamic/Tools/formItem.html'">
-                    </li>
-                </ul>
+    <div class="proporty box-padding">
+        <div ng-repeat="list in models.dropzones.Widget">
+            <ul dnd-list="list" style="list-style-type: none">
+                <li ng-repeat="item in list"
+                    dnd-draggable="item"
+                    dnd-effect-allowed="move"
+                    dnd-moved="list.splice($index, 1)"
+                    dnd-selected="models.selected = item"
+                    ng-class="{selected: models.selected === item}"
+                    ng-include="'/Dynamic/Tools/formItem.html'"
+                    style="padding:0">
+                </li>
+            </ul>
         </div>
+
+    </div>
 </div>
