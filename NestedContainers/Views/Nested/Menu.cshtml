@@ -3,15 +3,17 @@
     ViewBag.Title = "Menu";
 }
 
-<link href="~/Dynamic/Css/finaly.css" rel="stylesheet" />
+<link href="~/Dynamic/Css/general.css" rel="stylesheet" />
 <link href="~/Dynamic/Css/framework.css" rel="stylesheet" />
 <script src="~/Dynamic/Js/angular-drag-and-drop-lists.js"></script>
 <script src="~/Dynamic/Js/menu.js"></script>
-<div ng-app="menu" ng-controller="menuCtrl" class="finaly">
+<div ng-app="menu" ng-controller="menuCtrl" class="general">
     <div class="row">
         <!--*********************Tools*************************-->
         <div class="col-sm-3">
-          
+            <div class="row">
+                <div class="toolbox box box-grey box-padding" ng-include="'/Dynamic/Menu/general.html'"></div>
+            </div>
             <div class="row">
                 <div class="toolbox box box-grey" ng-include="'/Dynamic/Tools/template.html'"></div>
             </div>
@@ -21,12 +23,12 @@
         </div>
         <!--**************************Form Design***************************-->
         <div class="col-sm-3">
-            <div class="formDesign box box-grey " ng-include="'/Dynamic/Tools/menuGeneral.html'">
+            <div class="formDesign box box-grey " ng-include="'/Dynamic/Tools/general.html'">
             </div>
         </div>
         <!--*************************Properties***************************-->
         <div class="col-sm-3">
-           
+
             <div class="row">
                 <div ng-if="models.selected" class=" toolbox box box-grey box-padding" ng-include="'/Dynamic/Proporties/Menu/proporties.html'"></div>
             </div>

@@ -14,20 +14,14 @@ namespace NestedContainers.Controllers
         {
             return View();
         }
-        public ActionResult Nested()
-        {
-            return View();
-        }
 
-        public ActionResult Finaly()
-        {
-            return View();
-        }
-        public ActionResult Select()
-        {
-            return View();
-        }
         public ActionResult Menu()
+        {
+
+            return View();
+        }
+       
+        public ActionResult Form()
         {
             return View();
         }

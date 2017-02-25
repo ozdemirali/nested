@@ -139,6 +139,7 @@
     <Content Include="Dynamic\List\parentField.html" />
     <Content Include="Dynamic\List\actionButtonIsVisible.html" />
     <Content Include="Dynamic\List\toggle.html" />
+    <Content Include="Dynamic\Menu\general.html" />
     <Content Include="Dynamic\Proporties\Form\image.html" />
     <Content Include="Dynamic\Proporties\Form\General\format.html" />
     <Content Include="Dynamic\Proporties\Form\General\visible.html" />
@@ -161,9 +162,10 @@
     <Content Include="Dynamic\Proporties\Menu\menuItem.html" />
     <Content Include="Dynamic\Proporties\Menu\proporties.html" />
     <Content Include="Dynamic\Tools\dropDown.html" />
+    <Content Include="Dynamic\Tools\userFormListItem.html" />
+    <Content Include="Dynamic\Tools\userMenuItem.html" />
     <Content Include="Dynamic\Tools\formItem.html" />
     <Content Include="Dynamic\Tools\listGeneral.html" />
-    <Content Include="Dynamic\Tools\menuGeneral.html" />
     <Content Include="Dynamic\Tools\general.html" />
     <Content Include="Dynamic\Tools\menu.html" />
     <Content Include="Dynamic\Tools\datePicker.html" />
@@ -211,7 +213,7 @@
     <Content Include="Nested\bootstrap.min.css" />
     <Content Include="Dynamic\Css\framework.css" />
     <Content Include="Nested\demo-framework.js" />
-    <Content Include="Dynamic\Js\finaly.js" />
+    <Content Include="Dynamic\Js\form.js" />
     <Content Include="Nested\nested-frame.html" />
     <Content Include="Nested\nested.css" />
     <Content Include="Nested\nested.html" />
@@ -243,7 +245,7 @@
     <Content Include="Style\bootstrap-3.3.2.min.css" />
     <Content Include="Style\bootstrap-multiselect.css" />
     <Content Include="Style\bootstrap-toggle.min.css" />
-    <Content Include="Dynamic\Css\finaly.css" />
+    <Content Include="Dynamic\Css\general.css" />
     <Content Include="Style\font-awesome.css" />
     <Content Include="Style\font-awesome.min.css" />
     <Content Include="Style\bootstrap.css" />
@@ -255,7 +257,6 @@
     <Content Include="Dynamic\Tools\editView.html" />
     <Content Include="Dynamic\Tools\menuItem.html" />
     <Content Include="Dynamic\Tools\list.html" />
-    <Content Include="Views\Nested\denek.html" />
     <Content Include="Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -286,11 +287,9 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="Views\Nested\Nested.cshtml" />
-    <Content Include="Views\Nested\Finaly.cshtml" />
-    <Content Include="Views\Nested\Select.cshtml" />
     <Content Include="Views\Nested\Menu.cshtml" />
     <Content Include="Views\Nested\List.cshtml" />
+    <Content Include="Views\Nested\Form.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

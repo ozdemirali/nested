@@ -19,28 +19,75 @@ app.controller("menuCtrl", function ($scope) {
 
         ],
 
-        dropzones: {
-         
-            "group": [
-                {
 
-                }
-            ],
+        dropzones: {
+            "menuName": "",
+            "menuTitle":"",
+            "Widget": {
+                "group": [
+                    {
+                        "widgetType": "menu",
+                        "id": 2,
+                        "label": "Menu",
+                        "name": "Activite",
+                        "icon": "fa fa-bars",
+                        "data": [
+                          [
+                            {
+                                "widgetType": "menuItem",
+                                "id": 1,
+                                "label": "MenuItem",
+                                "icon": "fa fa-minus"
+                            }
+                          ]
+                        ]
+
+                    }
+
+                ]
+            },
+
 
         }
     };
 
+    //    dropzones: {
+         
+    //        "group": [
+    //            {
+    //                "widgetType": "menu",
+    //                "id": 2,
+    //                "label": "Menu",
+    //                "name": "Activite",
+    //                "icon": "fa fa-bars",
+    //                "data": [
+    //                  [
+    //                    {
+    //                        "widgetType": "menuItem",
+    //                        "id": 1,
+    //                        "label": "MenuItem",
+    //                        "icon": "fa fa-minus"
+    //                    }
+    //                  ]
+    //                ]
+
+    //            }
+    //        ],
+
+    //    }
+    //};
+
     /**********************************************************************/
     $scope.$watch('models.dropzones', function (model) {
-        for (var i = 0; i < $scope.models.dropzones.group.length; i++) {
-            if ($scope.models.dropzones.group[i].widgetType == "menuItem") {
-                $scope.models.dropzones.group.splice(i,1);
+        for (var i = 0; i < $scope.models.dropzones.Widget.group.length; i++) {
+            if ($scope.models.dropzones.Widget.group[i].widgetType == "menuItem") {
+                $scope.models.dropzones.Widget.group.splice(i, 1);
             }
-            if ($scope.models.dropzones.group[i].widgetType == "menu") {
-                for (var j = 0; j < $scope.models.dropzones.group[i].data.length; j++) {
-                    for (var k = 0; k < $scope.models.dropzones.group[i].data[j].length; k++) {
-                        if ($scope.models.dropzones.group[i].data[j][k].widgetType=="menu") {
-                            $scope.models.dropzones.group[i].data[j].splice(k, 1)
+            if ($scope.models.dropzones.Widget.group[i].widgetType == "menu") {
+                for (var j = 0; j < $scope.models.dropzones.Widget.group[i].data.length; j++) {
+                    for (var k = 0; k < $scope.models.dropzones.Widget.group[i].data[j].length; k++) {
+                        if ($scope.models.dropzones.Widget.group[i].data[j][k].widgetType=="menu") {
+                            $scope.models.dropzones.Widget.group[i].data[j].splice(k, 1)
                         }
                     }
 
