@@ -1,0 +1,230 @@
+﻿.general
+{
+   background-color:#1c1c1c;
+}
+
+/***************************** Toolbox *****************************/
+
+
+
+.general .toolbox {
+    background-color:#252526;
+}
+
+.general .toolbox h4{
+color:white;
+font-size:12pt;
+font-weight:bold;
+margin:0;
+margin-top:15px;
+margin-bottom:2px;
+
+}
+
+.general .toolbox i{
+padding-right:6px;
+}
+
+.general .toolbox ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0px;
+}
+
+.general .toolbox ul li
+{
+ padding-left:25px;  
+}
+
+.general .toolbox ul li:hover
+{
+   background-color:#3e3e40;
+}
+
+.general .toolbox ul li a {
+        color:white;
+        text-decoration: none;
+        display: block;
+        font-size:9pt;
+    }
+
+/***************************** recycle Çöp Kutusu *****************************/
+.general .recycle {
+    background-color:#252526;
+}
+
+.general .recycle h4{
+color:white;
+font-size:12pt;
+font-weight:bold;
+margin:0;
+margin-top:15px;
+margin-left:15px;
+margin-bottom:8px;
+
+}
+
+.general .recycle ul
+{
+    list-style-type:none;
+    
+     margin:0;
+     padding:0px;
+}
+
+.general .recycle ul li{
+    margin-left:auto;
+    margin-right:auto;
+    width:128px;
+    padding-left:25px;
+ 
+}
+
+.general .recycle ul li img{
+    
+    width:50px;
+    height:50px;
+}
+
+/*******************Form Desing*******************************/
+.general .formDesign {
+    margin-left:0;
+    margin-right:0;
+    background-image: url("/Img/mobile7.png");
+    background-repeat:no-repeat;
+    width:auto;
+    height:500px;
+    border:0;
+    background-color:#1c1c1c;
+    
+
+}
+
+.general .formDesign-padding-top
+{
+    padding-top:106px;
+    padding-left:20px;
+    width:240px;
+}
+
+.general .formDesign ul {
+    min-height: 42px;
+    padding:0;
+    background-color:white;
+    opacity:0.6;
+}
+ 
+.general .formDesign ul li {
+    margin-bottom:1px;
+    padding:2px;
+    
+}
+
+.general .formDesign ul li input {
+    background-color:none;
+    border:none;
+    font-size:9pt;
+}
+
+.general .formDesign ul li div {
+    border-bottom:1px gray solid;
+    font-size:9pt;
+
+}
+
+/***************************** Element Selection *****************************/
+
+.general .formDesign  .selected .item {
+    background-color: #3399ff;
+}
+
+.general .formDesign  .selected .item input{
+    background-color: #3399ff;
+}
+
+.general .formDesign  .item:hover {
+    background-color: #3e3e40;
+    color:white;
+}
+
+.general .formDesign  .item:hover input {
+    background-color: #3e3e40;
+}
+
+/****Proporties*****/
+
+.general .proporty {
+   
+ 
+}
+
+.general .proporty .multi {
+   
+}
+
+.general .proporty .multi ul {
+list-style-type:none;
+display:none;
+ max-height:100px;
+}
+
+.general .proporty .multi ul li{
+    padding:0;
+    border-left: 1px gray solid;
+    padding-left:2px;
+    vertical-align:middle;
+    font-size:9pt;
+    color:white;
+    text-align:left;
+   
+    
+}
+
+.general .proporty .multi ul li input{
+    margin:2px;
+    width:12px;
+}
+
+.general .proporty .multi:hover ul {
+display:block;
+}
+
+.general .proporty div {
+padding:0;
+}
+
+.general .proporty div input {
+width:100%;
+}
+
+.general .proporty table {
+     
+    width:100%;
+}
+
+.general .proporty table tr {
+   border-bottom:1px gray solid;
+    width:100%;
+}
+.general .proporty table th {
+   vertical-align:top;
+   
+}
+
+/**********************************************/
+.general .proporty table label{
+    font-size:9pt;
+    color:white;
+    margin:0;
+}
+.general .proporty table input {
+    border:0;
+    width: 100%;
+    border-left:1px gray solid;
+    background-color:#101010;
+    font-size:9pt;
+    line-height:9pt;
+    color:white;
+} 
+

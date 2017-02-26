@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Form";
+}
+<link href="~/Dynamic/Css/general.css" rel="stylesheet" />
+<link href="~/Dynamic/Css/framework.css" rel="stylesheet" />
+<script src="~/Dynamic/Js/angular-drag-and-drop-lists.js"></script>
+<script src="~/Dynamic/Js/form.js"></script>
+<div ng-app="form" ng-controller="formCtrl" class="general">
+    <div class="row">
+        <!--*********************Tools*************************-->
+        <div class="col-sm-3">
+            <div class="row">
+                <div class="toolbox box box-grey box-padding" ng-include="'/Dynamic/Forms/forms.html'"></div>
+            </div>
+            <div class="row">
+                <div class="toolbox box box-grey" ng-include="'/Dynamic/Tools/template.html'"></div>
+            </div>
+            <div class="row">
+                <div class="recycle box box-grey" ng-include="'/Dynamic/Recycle/recycle.html'"></div>
+            </div>
+        </div>
+        <!--**************************Form Design***************************-->
+        <div class="col-sm-3">
+            <div class="formDesign box box-grey " ng-include="'/Dynamic/Tools/general.html'">
+            </div>
+        </div>
+        <!--*************************Properties***************************-->
+        <div class="col-sm-3">
+            <div class="row">
+                <div class=" toolbox box box-grey box-padding" ng-include="'/Dynamic/Buttons/general.html'"></div>
+            </div>
+            <div class="row">
+                <div ng-if="models.selected" class=" toolbox box box-grey box-padding" ng-include="'/Dynamic/Proporties/Form/proporties.html'"></div>
+            </div>
+        </div>
+
+        <!--*******************************User************************-->
+        @*<div class="col-sm-3">
+                <div class="row">
+                    <div class=" toolbox box box-grey box-padding" ng-include="'/Dynamic/User/general.html'"></div>
+                </div>
+
+            </div>*@
+
+    </div>
+    <!--Genereted Model-->
+    <div class="row" ng-include="'/Dynamic/JsonModel/jsonModel.html'"></div>
+</div>
+
